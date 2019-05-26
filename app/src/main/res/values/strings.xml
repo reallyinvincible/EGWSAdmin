@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EGWS-Admin</string>
+    <string name="google_maps_key">AIzaSyCpuDLvvzNd9TL17eGoz1G72cjxGlw7PC8</string>
+    <string name="check_reports"><u>check reports</u></string>
+    <string name="title_activity_maps">Map</string>
+    <string name="show_all_reports"><u>Show All Reports</u></string>
+</resources>

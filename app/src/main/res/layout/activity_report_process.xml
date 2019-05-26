@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_report_process"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorPrimaryDark"
+    android:backgroundTint="@color/colorPrimaryDark"
+    tools:context=".activities.ReportProcessActivity">
+
+    <com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar
+        android:id="@+id/collapsibleCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:buttonLeft_drawableTintColor="@android:color/white"
+        app:buttonRight_drawableTintColor="@android:color/white"
+        app:expandIconColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:primaryColor="@color/colorAccent"
+        app:selectedItem_background="@drawable/circle_white_solid_background"
+        app:selectedItem_textColor="@color/colorAccent"
+        app:textColor="@android:color/white"
+        app:todayItem_background="@drawable/circle_white_stroke_background"
+        app:todayItem_textColor="@android:color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_user_report_process"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/collapsibleCalendar" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_export"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        app:cornerRadius="48dp"
+        app:strokeColor="@color/colorAccent"
+        app:icon="@drawable/ic_export"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_all_reports"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/show_all_reports"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/collapsibleCalendar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

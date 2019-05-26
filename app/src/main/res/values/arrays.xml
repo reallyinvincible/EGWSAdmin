@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="report_type">
+        <item>Total</item>
+        <item>Today</item>
+    </string-array>
+
+    <string-array name="fragment_type">
+        <item>Users</item>
+        <item>Map</item>
+    </string-array>
+
+</resources>
